@@ -14,8 +14,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar(),
-      body: Column(
-        children: [Text("Theme Data", style: TextStyle(fontSize: 30))],
+
+      ///this widget to make content center
+      body: Center(
+        child: Column(
+          ///this line to make content center
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ///add button to test trigger notification here
+            ElevatedButton(onPressed: () {}, child: Text("Click me")),
+            Text("Theme Data", style: TextStyle(fontSize: 30)),
+          ],
+        ),
       ),
     );
   }
